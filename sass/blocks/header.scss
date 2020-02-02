@@ -1,0 +1,85 @@
+.header{
+    background:url("../../image/head.jpg") center top no-repeat #000;
+    background-size: cover;
+    
+    &__top{
+        align-items: center;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 239px 1fr;
+        grid-column-gap: 20px;
+    }
+    &__title{
+        font-size: 60px;
+        color: #fff;
+        letter-spacing: 36px;
+        line-height: 70px;
+        text-align: center;
+        font-weight: normal;
+    }
+    &__text{
+        text-align: center;
+    }
+    &__link{
+        color: #f84545;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 12px;
+        line-height: 75px;
+        text-decoration: none;
+        display: inline-block;
+        transition:ease .5s;
+        &:hover{
+            letter-spacing: 20px;
+        }
+    
+    }
+    &__button{
+        display: block;
+        text-decoration: none;
+        margin: 0 auto;
+        width: 84px;
+        height: 42px;
+        cursor: pointer;
+        
+    }
+    &__info{
+        margin: 16.6% 0;
+    }
+    &__wrap{
+        padding-bottom: 65px;
+    }
+    &__logo{
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:1200px){
+    .header__title{
+        font-size: 50px;
+        letter-spacing: 18px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width:768px){
+    .header__top{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+}
+@media (max-width:580px){
+    .header__title{
+        font-size: 30px;
+        letter-spacing: 18px;
+        line-height: 60px;
+    }
+    .header__link{
+        font-size: 15px;
+        letter-spacing: 6px;
+        line-height: 45px;
+        &:hover{
+            letter-spacing: 8px;
+        }
+    }
+}
